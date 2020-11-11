@@ -390,4 +390,174 @@ body {
 
 
 
+/* Login Register styles
+-------------------------------------------------- */
+
+#email, #psw, #name, #city {
+    background-color: #eafdf5;
+    border-radius: 50px !important;
+    padding: 12px 15px 12px 15px !important;
+    width: 100%;
+    box-sizing: border-box;
+    border: none !important;
+    border: 1px solid #4cb176 !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    font-weight: 400
+}
+
+#email:focus, #psw:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #51ddba !important;
+    outline-width: 0;
+    font-weight: 400
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+
+.card {
+    border-radius: 0;
+	border: none
+}
+
+.card1 {
+    width: 50%;
+    padding: 40px 30px 10px 30px
+}
+
+.card2 {
+	width: 50%;
+	background-size: auto;
+	background: url("https://images.unsplash.com/photo-1587585113851-269ef0e07d9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+	filter: grayscale(1);	
+}
+
+
+#logoLogin {
+    width: 230px;
+    height: 90px;
+}
+
+.heading {
+    margin-bottom: 20px !important
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0,3);
+}
+
+:-ms-input-placeholder {
+    color: #000 !important
+}
+
+::-ms-input-placeholder {
+    color: #000 !important
+}
+
+.form-control-label {
+    font-size: 12px;
+    margin-left: 15px
+}
+
+.msg-info {
+	text-align: center;
+    padding-left: 15px;
+    margin-bottom: 30px
+}
+
+.btn-color {
+    border-radius: 50px;
+    color: #fff;
+    background-image: linear-gradient(to right, #1a8f1a, #6cec7d);
+    padding: 15px;
+    cursor: pointer;
+    border: none !important;
+    margin-top: 40px
+}
+
+.btn-color:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #6cec7d, #1a8f1a)
+}
+
+.btn-white {
+    border-radius: 50px;
+    color: #000000;
+    background-color: #fff;
+    padding: 8px 40px;
+    cursor: pointer;
+    border: 2px solid #1a8f1a !important
+}
+
+.btn-white:hover {
+	color: #fff;
+	background-image: linear-gradient(to right, #6cec7d, #1a8f1a)
+}
+
+a {
+    color: #000
+}
+
+a:hover {
+    color: #000
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 50px !important
+}
+
+.sm-text {
+    font-size: 15px
+}
+
+
+.card2 h3{
+	text-align: center;
+	margin-bottom: 700px;
+}
+
+@media screen and (max-width: 992px) {
+    .card1 {
+        width: 100%;
+        padding: 40px 30px 10px 30px
+    }
+
+    .card2 {
+        width: 100%
+    }
+
+    .right {
+        margin-top: 100px !important;
+        margin-bottom: 100px !important
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px !important
+    }
+
+    .card2 {
+        padding: 50px
+    }
+
+    .right {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important
+    }
+}
+
+
+
+
+
 
