@@ -55,7 +55,7 @@ namespace ecoRecycling.Controllers
             return View();
         }
 
-        public IActionResult Reciclaje()
+        public IActionResult Reciclar()
         {
             return View();
         }
@@ -75,7 +75,7 @@ namespace ecoRecycling.Controllers
             return View();
         }
 
-        public IActionResult ReciclajeInfo()
+        public IActionResult ReciclarInfo()
         {
             return View();
         }
