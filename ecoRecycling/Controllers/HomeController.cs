@@ -24,11 +24,13 @@ namespace ecoRecycling.Controllers
         }
 
         [HttpPost]
-        public IActionResult EnviarContacto(string nombre, string mail, string mensaje)
+        public IActionResult EnviarContacto(string nombre, string mail, int telefono,string mensaje)
         {
             ViewBag.nombre = nombre;
             ViewBag.mail = mail;
+            ViewBag.telefono = telefono;
             ViewBag.mensaje = mensaje;
+            
 
             var smtpClient = new SmtpClient("smtp.gmail.com"){
                 Port = 587,
@@ -39,7 +41,7 @@ namespace ecoRecycling.Controllers
             string mensajeMail = $"{nombre}, tu mensaje fue recibido. Nos pondremos en contacto con usted.\n Su mensaje fue: {mensaje}";
 
             smtpClient.Send(myMail, mail, $"{nombre}, gracias por tu mensaje", mensajeMail);
-            smtpClient.Send(myMail, myMail, $"Llego un mail de {mail}", $"{mensaje}");
+            smtpClient.Send(myMail, myMail, $"Llego un mail de: {mail}", $"{mensaje}\n Telefono: {telefono}");
             
             return View("Saludo");
         }
