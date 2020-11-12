@@ -75,7 +75,7 @@ namespace ecoRecycling.Controllers
             return View();
         }
 
-        public IActionResult PapelCartonInfo()
+        public IActionResult ReciclajeInfo()
         {
             return View();
         }

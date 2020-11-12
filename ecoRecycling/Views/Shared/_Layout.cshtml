@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-light mb-3">
-            <div class="container">
+            <div class="container-fluid">
             <!--    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ecoRecycling</a>-->
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://i.ibb.co/HxBsYQg/Logo-Eco-R2.png" alt="logo" id="logoNav"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -46,14 +46,14 @@
         </nav>  
     </header>
     
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container-fluid">
             &copy; 2020 - ecoRecycling - <a asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a>
         </div>
     </footer>

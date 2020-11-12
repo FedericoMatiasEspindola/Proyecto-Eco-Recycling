@@ -39,11 +39,11 @@ a {
   text-transform: uppercase;
   margin: auto;
 }
-
+/*
 #menu{
   filter: invert(1)
 }
-
+*/
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -91,8 +91,8 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  /*background: url(https://cdn.pling.com/img/7/6/5/5/369d20d7037754783f20c3ddf88d05ee8c5e.png);*/
-  background-color: rgb(8, 59, 34);
+  background: url(https://cdn.pling.com/img/7/6/5/5/369d20d7037754783f20c3ddf88d05ee8c5e.png);
+  /*background-color: rgb(8, 59, 34);*/
 }
 
 .footer {
@@ -424,13 +424,13 @@ button:focus {
 
 
 .card {
-    border-radius: 0;
+  border-radius: 0;
 	border: none
 }
 
 .card1 {
-    width: 50%;
-    padding: 40px 30px 10px 30px
+  width: 50%;
+  padding: 40px 30px 10px 30px
 }
 
 .card2 {
@@ -555,6 +555,7 @@ a:hover {
         margin-bottom: 50px !important
     }
 }
+
 
 
 
