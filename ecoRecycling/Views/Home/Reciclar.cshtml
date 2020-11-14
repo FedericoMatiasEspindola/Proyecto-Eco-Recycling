@@ -2,130 +2,101 @@
     ViewData["Title"] = "Reciclaje";
 }
 
+@section ReciclarStyles{
+    <link rel="stylesheet" href="~/css/reciclarStyle.css" />
+}
 
-<div class="conatinerCard">
-    <div class="wrap">
-
-        <div class="box one animated bounceInLeft">
-            <div class="date">
-            </div>
-            <a class="card-link" asp-action="ReciclarInfo" ><h1>PAPEL Y CARTÓN</h1></a>
-            <div class="poster p1 ">
-            </div>
-        </div>
-
-        <div class="box two animated bounceInLeft">
-            <div class="date">
-            </div>
-            <H1>VIDRIO</H1>
-            <div class="poster p2">
-            </div>
-        </div>
-
-        <div class="box three animated bounceInDown">
-            <div class="date">
-            </div>
-            <h1>METAL</h1>
-            <div class="poster p3">
-            </div>
-        </div>
-
-        <div class="box five animated bounceInRight">
-            <div class="date">
-            </div>
-            <h1>PILAS</h1>
-            <div class="poster p4">
-                <h4>M</h4>
-            </div>
-        </div>
-
-        <div class="box six animated bounceInRight">
-            <div class="date">
-            </div>
-            <h1>INFORMÁTICA</h1>
-            <div class="poster p5">
-            </div>
-        </div>
-
-        <div class="box seven animated bounceInLeft">
-            <div class="date">
-            </div>
-            <h1>PLÁSTICO</h1>
-            <div class="poster p6">
-            </div>
-        </div>
-
-        <div class="box eight animated bounceInLeft">
-            <div class="date">
-            </div>
-            <h1>ORGÁNICO</h1>
-            <div class="poster p7">
-            </div>
-        </div>
-
-        <div class="box nine animated bounceInUp">
-            <div class="date">
-            </div>
-            <h1>MEDICAMENTOS</h1>
-            <div class="poster p8">
-            </div>
-        </div>
-
-        <div class="box ten animated bounceInRight">
-            <div class="date">
-            </div>
-            <h1>NEUMÁTICOS</h1>
-            <div class="poster p9">
-            </div>
-        </div>
-
-        <div class="box eleven animated bounceInRight">
-            <div class="date">
-            </div>
-            <h1>MADERA</h1>
-            <div class="poster p10">
-            </div>
-        </div>
-
-        <div class="box tlv">
-            <div class="date">
-            </div>
-            <h1>CONSTRUCCIÓN</h1>
-            <div class="poster p11">
-            </div>
-        </div>
-
-        <div class="box thirteen">
-            <div class="date">
-            </div>
-            <h1>ELECTRODOM.</h1>
-            <div class="poster p12">
-            </div>
-        </div>
-
-        <div class="box ftn">
-            <div class="date">
-            </div>
-            <h1>ACEITE</h1>
-            <div class="poster p13">
-            </div>
-        </div>
-
-        <div class="box fith">
-            <div class="date">
-            </div>
-            <h1>TEXTIL</h1>
-            <div class="poster p14">
-            </div>
-        </div>
-
-        <div class="box sith">
-            <div class="date">
-            </div>
-            <h1>RECICLARTE</h1>
-            <div class="poster p15">
-            </div>
-        </div>
-
+<div class="movie_card" id="bright">
+  <div class="info_section">
+    <div class="movie_header">
+      <img class="locandina" src="https://i.ibb.co/YLDrSqq/papel-Carton.png"/>
+      <h1>¿Como Reciclo?</h1>
+      <h4>Papel y cartón</h4>
     </div>
+    <div class="movie_desc">
+      <p class="text">
+        Junta y lleva a reciclar: periódicos, revistas, papel blanco, cajas de cartón (galletas, aparatos electrónicos, etc.), rollo de papel higiénico y de cocina, 
+        papel de envoltorios, publicidad, sobres sin ventanilla, hueveras, etc.
+        Guarda el papel en cajas de cartón o bolsas de papel y déjalo así en el contenedor. Procura que el papel está seco.<br><br>
+      </p>
+        <a class="button" href="#popup">Leer Más</a>
+    </div>
+
+    <div class="info">
+        <div class="popup" id="popup">
+            <div class="popup-inner">
+                <div class="popup__photo">
+                    <img src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80" alt="">
+                </div>
+                <div class="popup__text">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat 
+                        viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis 
+                        dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.
+                    </p>
+                </div>
+                    <a class="popup__close" href="#">X</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="blur_back bright_back"></div>
 </div>
+
+<div class="movie_card" id="tomb">
+  <div class="info_section">
+    <div class="movie_header">
+      <img class="locandina" src="https://i.ibb.co/VpLScqL/Vidrio.png"/>
+      <h1>¿Como Reciclo?</h1>
+      <h4>vidrio</h4>
+    </div>
+    <div class="movie_desc">
+      <p class="text">
+            El reciclado de vidrio entraña beneficios sociales, ambientales y económicos, ya que genera un significativo ahorro energético. 
+            El 100% del vidrio se reutiliza para crear nuevos envases.
+            <br>
+            El vidrio tiene tres características que hacen de él un material excelente para ser reciclado. Uno es que puede ser reciclado el 100% del producto, 
+            puede ser reciclado infinidad de veces y además mantiene todas sus propiedades.
+            Aparte de esto, los beneficios para el Medio Ambiente son muy importantes:<br>
+            1- Menos residuos para los vertederos<br>
+            2- La contaminación del aire se reduce un 20%, ya que se quema menos combustible para fabricar nuevos envases y, además, se reduce la producción de gases en la fundición.<br>
+            3- El vidrio reciclado requiere 26% menos de energía que su fabricación desde cero.<br>
+            4- Ahorro de recursos naturales: reciclando 3.000 botellas se ahorran 1,2 toneladas de materias primas, reduciendo así la erosión de tierra por extracción.
+      </p>
+    </div>
+  </div>
+  <div class="blur_back tomb_back"></div>
+</div>
+
+<div class="movie_card" id="ave">
+  <div class="info_section">
+    <div class="movie_header">
+      <img class="locandina" src="https://i.ibb.co/VYsfP4g/Metal.png"/>
+      <h1>¿Como Reciclo?</h1>
+      <h4>metal</h4>
+    </div>
+    <div class="movie_desc">
+      <p class="text">
+        Los metales tienen innumerables propiedades que permiten que, a través de su reciclado, se puedan lograr excelentes beneficios medioambientales, 
+        económicos y sociales. Reciclarlos es una actividad sencilla y capaz de proporcionar un importante ahorro de materias primas vírgenes.
+        <br><br>
+        ¿Cuáles son los materiales que podemos reciclar?<br>
+        El acero ,El aluminio, El cobre, El bronce, El latón.
+        <br><br>
+        ¿Qué metales no se pueden reciclar?<br>
+        Aunque casi la mayor parte de los metales se reciclan, existen algunos que no se pueden reutilizar. Tal es el caso de los  usados para 
+        pinturas o productos tóxicos, tuberías (siempre y cuando no sean de cobre), perchas de ropa y pedacería de metal.
+        <br><br>
+        Beneficios de reciclar metales:<br>
+        1- Mejoramos la calidad del aire al reducir su contaminación. El reciclaje del aluminio, de hecho, representa una disminución de las emisiones en 9,8 toneladas de 
+        CO2 y 64 kilogramos de dióxido de azufre.<br>
+        2- Disminuimos las emisiones de gases de efecto invernadero.<br>
+        3- Generamos un descenso de los residuos destinados a incineración, lo que hace que disminuyan las  sustancias tóxicas y peligrosas.<br>
+        4- Contribuimos a que se reduzcan los residuos de chatarra que acaban en vertederos.
+      </p>
+    </div>
+  </div>
+  <div class="blur_back ave_back"></div>
+</div>
+
