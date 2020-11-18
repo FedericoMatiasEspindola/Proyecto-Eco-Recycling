@@ -43,7 +43,7 @@ namespace ecoRecycling.Controllers
             smtpClient.Send(myMail, mail, $"{nombre}, gracias por tu mensaje", mensajeMail);
             smtpClient.Send(myMail, myMail, $"Llego un mail de: {mail}", $"{mensaje}\n Telefono: {telefono}");
             
-            return View("Saludo");
+            return View("Contacto");
         }
 
 

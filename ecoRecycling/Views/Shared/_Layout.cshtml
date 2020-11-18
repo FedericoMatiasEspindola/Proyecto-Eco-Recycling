@@ -13,10 +13,12 @@
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     @RenderSection("ReciclarStyles", required: false)
+    @RenderSection("FormStyles", required: false)
+    @RenderSection("InicioStyles", required: false)
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-light mb-3">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light">
             <div class="container-fluid">
             <!--    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ecoRecycling</a>-->
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://i.ibb.co/HxBsYQg/Logo-Eco-R2.png" alt="logo" id="logoNav"></a>
@@ -48,14 +50,14 @@
     </header>
     
     <div class="container-fluid">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container-fluid">
-            &copy; 2020 - ecoRecycling - <a asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a>
+            &copy; 2020 - Eco Recycling - <a asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a>
         </div>
     </footer>
 
@@ -63,5 +65,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+    @RenderSection("FormScripts", required: false)
 </body>
 </html>

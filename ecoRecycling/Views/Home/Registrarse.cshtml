@@ -2,6 +2,10 @@
     ViewData["Title"] = "Registrarse";
 }
 
+@section FormStyles{
+    <link rel="stylesheet" href="~/css/formStyle.css" />
+}
+
 <div class="container px-4 py-5 mx-auto animated bounceInLeft">
     <div class="card card0">
         <div class="d-flex flex-lg-row flex-column-reverse">
@@ -9,7 +13,6 @@
                 <div class="row justify-content-center my-auto">
                     <div class="col-md-8 col-10 my-5">
                         <div class="row justify-content-center "> <img id="logoLogin" src="https://i.ibb.co/HxBsYQg/Logo-Eco-R2.png"> </div>
-                        <h3 class="mb-5 text-center heading">Eco Recycling</h3>
                         <h6 class="msg-info"><strong>Crea tu cuenta</strong></h6>
                         <div class="form-group"> <label class="form-control-label text-muted">Nombre</label> <input type="text" id="name" name="name" placeholder="Nombre" class="form-control" required> </div>
                         <div class="form-group"> <label class="form-control-label text-muted">Email</label> <input type="email" id="email" name="email" placeholder="Correo Electronico" class="form-control" required> </div>
